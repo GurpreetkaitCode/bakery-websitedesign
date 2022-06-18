@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BakeryStore</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/products.css">
+    <link rel="stylesheet" href="../CSS/cart.css">
+</head>
+
+<body>
+    <div id="cartItemBox">
+        <div class="wh">
+            <div class="heading">
+                <h1 class="hoverEffect">
+                    <div class="text">My Cart</div>
+                    <div class="one"></div>
+                    <div class="two"></div>
+                </h1>
+            </div>
+        </div>
+        <div id="icon">
+            <img src="../Icons/closeIcon.png" onclick="openCart()" alt="">
+        </div>
+        <div id="itemBox">
+            <!-- populate with javaScript -->
+        </div>
+        <div id="checkout">
+            <div class="box">
+                <h4>Number of Items</h4>
+                <h4 id="numberOFitems">0</h4>
+            </div>
+            <div class="box">
+                <h4>Sub-Total</h4>
+                <h4 id="subTotal">0</h4>
+            </div>
+            <div class="box">
+                <h4>Delivery Charges</h4>
+                <h4 id="deliveryCharges">0</h4>
+            </div>
+            <div class="box">
+                <h4>Discount</h4>
+                <h4 id="discount">0</h4>
+            </div>
+            <div class="box">
+                <h4>Total</h4>
+                <h4 id="total">0</h4>
+            </div>
+            <div class="box">
+                <div class="BTN">
+                    <a href="#" target="_blank">
+                        <button class="btn">Order Now</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--*-----------------Section 1---------------------*-->
+    <section id="sec1">
+        <div id="shoppingCart" class="hoverEffect">
+            <div class="text"><img src="../Icons/shoppingcart.png" onclick="openCart()" alt=""><span>0</span></div>
+            <div class="one"></div>
+            <div class="two"></div>
+        </div>
+        <div id="logo">
+            <img src="../Icons/Logo.png" alt="">
+        </div>
+        <nav>
+            <ul>
+                <a href="./index.html">
+                    <li class="hoverEffect">
+                        <div class="text">Home</div>
+                        <div class="one"></div>
+                        <div class="two"></div>
+                    </li>
+                </a>
+                <a href="./aboutus.html">
+                    <li class="hoverEffect">
+                        <div class="text">About us</div>
+                        <div class="one"></div>
+                        <div class="two"></div>
+                    </li>
+                </a>
+                <a href="./contactus.html">
+                    <li class="hoverEffect">
+                        <div class="text">Contact us</div>
+                        <div class="one"></div>
+                        <div class="two"></div>
+                    </li>
+                </a>
+                <a href="./products.html">
+                    <li class="hoverEffect">
+                        <div class="text">Products</div>
+                        <div class="one"></div>
+                        <div class="two"></div>
+                    </li>
+                </a>
+                <a href="./gallery.html">
+                    <li class="hoverEffect">
+                        <div class="text">Gallery</div>
+                        <div class="one"></div>
+                        <div class="two"></div>
+                    </li>
+                </a>
+            </ul>
+        </nav>
+        <div class="wh">
+            <div class="heading">
+                <h1 class="hoverEffect">
+                    <div class="text">Our Products</div>
+                    <div class="one"></div>
+                    <div class="two"></div>
+                </h1>
+            </div>
+        </div>
+    </section>
+    <!--**---------------SECTION 2----------------**-->
+    <!--**----------------------------------------**-->
+    <section id="section2">
+        <img src="../Images/blendmode5.jpg" id="blend5" alt="">
+        <div class="wh">
+            <div class="heading">
+                <h1 class="hoverEffect">
+                    <div class="text">Baked Breads</div>
+                    <div class="one"></div>
+                    <div class="two"></div>
+                </h1>
+            </div>
+        </div>
+        <div class="pdctContainer container2 ">
+            <div class="card cartItem">
+                <div class="image">
+                    <img src="../Images/Gallery/bread2.jpg" alt="">
+                </div>
+                <div class="heading">
+                    <h2>Bread <span><img src="../Icons/rupee.png" alt="" srcset="">150</span></h2>
+                </div>
+                <div class="cardbtn">
+                    <a>
+                        <button class="btn add-cart">Add to Cart</button>
+                    </a>
+                    <a>
+                        <button class="btn buyNow" onclick="openCart()">Buy Now</button>
+                    </a>
+                </div>
+            </div>
+            <div class="card cartItem">
+                <div class="image">
+                    <img src="../Images/Gallery/bread2.jpg" alt="">
+                </div>
+                <div class="heading">
+                    <h2>Bread <span><img src="../Icons/rupee.png" alt="" srcset="">150</span></h2>
+                </div>
+                <div class="cardbtn">
+                    <a>
+                        <button class="btn add-cart">Add to Cart</button>
+                    </a>
+                    <a>
+                        <button class="btn buyNow" onclick="openCart()">Buy Now</button>
+                    </a>
+                </div>
+            </div>
+            <div class="card cartItem">
+                <div class="image">
+                    <img src="../Images/Gallery/bread2.jpg" alt="">
+                </div>
+                <div class="heading">
+                    <h2>Bread <span><img src="../Icons/rupee.png" alt="" srcset="">150</span></h2>
+                </div>
+                <div class="cardbtn">
+                    <a>
+                        <button class="btn add-cart">Add to Cart</button>
+                    </a>
+                    <a>
+                        <button class="btn buyNow" onclick="openCart()">Buy Now</button>
+                    </a>
+                </div>
+            </div>
+            <div class="card cartItem">
+                <div class="image">
+                    <img src="../Images/Gallery/bread2.jpg" alt="">
+                </div>
+                <div class="heading">
+                    <h2>Bread <span><img src="../Icons/rupee.png" alt="" srcset="">150</span></h2>
+                </div>
+                <div class="cardbtn">
+                    <a>
+                        <button class="btn add-cart">Add to Cart</button>
+                    </a>
+                    <a>
+                        <button class="btn buyNow" onclick="openCart()">Buy Now</button>
+                    </a>
+                </div>
+            </div>
+            <div class="card cartItem">
+                <div class="image">
+                    <img src="../Images/Gallery/bread2.jpg" alt="">
+                </div>
+                <div class="heading">
+                    <h2>Bread <span><img src="../Icons/rupee.png" alt="" srcset="">150</span></h2>
+                </div>
+                <div class="cardbtn">
+                    <a>
+                        <button class="btn add-cart">Add to Cart</button>
+                    </a>
+                    <a>
+                        <button class="btn buyNow" onclick="openCart()">Buy Now</button>
+                    </a>
+                </div>
+            </div>
+            <div class="card cartItem">
+                <div class="image">
+                    <img src="../Images/Gallery/bread2.jpg" alt="">
+                </div>
+                <div class="heading">
+                    <h2>Bread <span><img src="../Icons/rupee.png" alt="" srcset="">150</span></h2>
+                </div>
+                <div class="cardbtn">
+                    <a>
+                        <button class="btn add-cart">Add to Cart</button>
+                    </a>
+                    <a>
+                        <button class="btn buyNow" onclick="openCart()">Buy Now</button>
+                    </a>
+                </div>
+            </div>
+            <div class="card cartItem">
+                <div class="image">
+                    <img src="../Images/Gallery/bread2.jpg" alt="">
+                </div>
+                <div class="heading">
+                    <h2>Bread <span><img src="../Icons/rupee.png" alt="" srcset="">150</span></h2>
+                </div>
+                <div class="cardbtn">
+                    <a>
+                        <button class="btn add-cart">Add to Cart</button>
+                    </a>
+                    <a>
+                        <button class="btn buyNow" onclick="openCart()">Buy Now</button>
+                    </a>
+                </div>
+            </div>
+            <div class="card cartItem">
+                <div class="image">
+                    <img src="../Images/Gallery/bread2.jpg" alt="">
+                </div>
+                <div class="heading">
+                    <h2>Bread <span><img src="../Icons/rupee.png" alt="" srcset="">150</span></h2>
+                </div>
+                <div class="cardbtn">
+                    <a>
+                        <button class="btn add-cart">Add to Cart</button>
+                    </a>
+                    <a>
+                        <button class="btn buyNow" onclick="openCart()">Buy Now</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--**---------------SECTION 3----------------**-->
+    <!--**----------------------------------------**-->
+    <section id="section3">
+        <img src="../Images/blendmode6.jpg" id="blend6" alt="">
+        <div class="wh">
+            <div class="heading">
+                <h1 class="hoverEffect">
+                    <div class="text">Delicious Cakes</div>
+                    <div class="one"></div>
+                    <div class="two"></div>
+                </h1>
+            </div>
+        </div>
+        <div class="pdctContainer container2 ">
+            <div class="card cartItem">
+                <div class="image">
+                    <img src="../Images/Gallery/cake3.jpg" alt="">
+                </div>
+                <div class="heading">
+                    <h2>Cakes <span><img src="../Icons/rupee.png" alt="" srcset="">300</span></h2>
+                </div>
+                <div class="cardbtn">
+                    <button class="btn add-cart">Add to Cart</button>
+                    </a>
+                    <button class="btn buyNow" onclick="openCart()">Buy Now</button>
+                    </a>
+                </div>
+            </div>
+            <div class="card cartItem">
+                <div class="image">
+                    <img src="../Images/Gallery/cake3.jpg" alt="">
+                </div>
+                <div class="heading">
+                    <h2>Cakes <span><img src="../Icons/rupee.png" alt="" srcset="">300</span></h2>
+                </div>
+                <div class="cardbtn">
+                    <button class="btn add-cart">Add to Cart</button>
+                    </a>
+                    <button class="btn buyNow" onclick="openCart()">Buy Now</button>
+                    </a>
+                </div>
+            </div>
+            <div class="card cartItem">
+                <div class="image">
+                    <img src="../Images/Gallery/cake3.jpg" alt="">
+                </div>
+                <div class="heading">
+                    <h2>Cakes <span><img src="../Icons/rupee.png" alt="" srcset="">300</span></h2>
+                </div>
+                <div class="cardbtn">
+                    <button class="btn add-cart">Add to Cart</button>
+                    </a>
+                    <button class="btn buyNow" onclick="openCart()">Buy Now</button>
+                    </a>
+                </div>
+            </div>
+            <div class="card cartItem">
+                <div class="image">
+                    <img src="../Images/Gallery/cake3.jpg" alt="">
+                </div>
+                <div class="heading">
+                    <h2>Cakes <span><img src="../Icons/rupee.png" alt="" srcset="">300</span></h2>
+                </div>
+                <div class="cardbtn">
+                    <button class="btn add-cart">Add to Cart</button>
+                    </a>
+                    <button class="btn buyNow" onclick="openCart()">Buy Now</button>
+                    </a>
+                </div>
+            </div>
+            <div class="card cartItem">
+                <div class="image">
+                    <img src="../Images/Gallery/cake3.jpg" alt="">
+                </div>
+                <div class="heading">
+                    <h2>Cakes <span><img src="../Icons/rupee.png" alt="" srcset="">300</span></h2>
+                </div>
+                <div class="cardbtn">
+                    <button class="btn add-cart">Add to Cart</button>
+                    </a>
+                    <button class="btn buyNow" onclick="openCart()">Buy Now</button>
+                    </a>
+                </div>
+            </div>
+            <div class="card cartItem">
+                <div class="image">
+                    <img src="../Images/Gallery/cake3.jpg" alt="">
+                </div>
+                <div class="heading">
+                    <h2>Cakes <span><img src="../Icons/rupee.png" alt="" srcset="">300</span></h2>
+                </div>
+                <div class="cardbtn">
+                    <button class="btn add-cart">Add to Cart</button>
+                    </a>
+                    <button class="btn buyNow" onclick="openCart()">Buy Now</button>
+                    </a>
+                </div>
+            </div>
+            <div class="card cartItem">
+                <div class="image">
+                    <img src="../Images/Gallery/cake3.jpg" alt="">
+                </div>
+                <div class="heading">
+                    <h2>Cakes <span><img src="../Icons/rupee.png" alt="" srcset="">300</span></h2>
+                </div>
+                <div class="cardbtn">
+                    <button class="btn add-cart">Add to Cart</button>
+                    </a>
+                    <button class="btn buyNow" onclick="openCart()">Buy Now</button>
+                    </a>
+                </div>
+            </div>
+            <div class="card cartItem">
+                <div class="image">
+                    <img src="../Images/Gallery/cake3.jpg" alt="">
+                </div>
+                <div class="heading">
+                    <h2>Cakes <span><img src="../Icons/rupee.png" alt="" srcset="">300</span></h2>
+                </div>
+                <div class="cardbtn">
+                    <button class="btn add-cart">Add to Cart</button>
+                    </a>
+                    <button class="btn buyNow" onclick="openCart()">Buy Now</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--**---------------SECTION 4----------------**-->
+    <!--**----------------------------------------**-->
+    <section id="section4">
+        <img src="../Images/blendmode6.jpg" id="blend6" alt="">
+        <div class="wh">
+            <div class="heading">
+                <h1 class="hoverEffect">
+                    <div class="text">Delicious Biscuits</div>
+                    <div class="one"></div>
+                    <div class="two"></div>
+                </h1>
+            </div>
+        </div>
+        <div class="pdctContainer container2 ">
+            <div class="card cartItem">
+                <div class="image">
+                    <img src="../Images/Gallery/biscuits2.jpg" alt="">
+                </div>
+                <div class="heading">
+                    <h2>Biscuits <span><img src="../Icons/rupee.png" alt="" srcset="">150</span></h2>
+                </div>
+                <div class="cardbtn">
+                    <a>
+                        <button class="btn add-cart">Add to Cart</button>
+                    </a>
+                    <a>
+                        <button class="btn buyNow" onclick="openCart()">Buy Now</button>
+                    </a>
+                </div>
+            </div>
+            <div class="card cartItem">
+                <div class="image">
+                    <img src="../Images/Gallery/biscuits2.jpg" alt="">
+                </div>
+                <div class="heading">
+                    <h2>Biscuits <span><img src="../Icons/rupee.png" alt="" srcset="">150</span></h2>
+                </div>
+                <div class="cardbtn">
+                    <a>
+                        <button class="btn add-cart">Add to Cart</button>
+                    </a>
+                    <a>
+                        <button class="btn buyNow" onclick="openCart()">Buy Now</button>
+                    </a>
+                </div>
+            </div>
+            <div class="card cartItem">
+                <div class="image">
+                    <img src="../Images/Gallery/biscuits2.jpg" alt="">
+                </div>
+                <div class="heading">
+                    <h2>Biscuits <span><img src="../Icons/rupee.png" alt="" srcset="">150</span></h2>
+                </div>
+                <div class="cardbtn">
+                    <a>
+                        <button class="btn add-cart">Add to Cart</button>
+                    </a>
+                    <a>
+                        <button class="btn buyNow" onclick="openCart()">Buy Now</button>
+                    </a>
+                </div>
+            </div>
+            <div class="card cartItem">
+                <div class="image">
+                    <img src="../Images/Gallery/biscuits2.jpg" alt="">
+                </div>
+                <div class="heading">
+                    <h2>Biscuits <span><img src="../Icons/rupee.png" alt="" srcset="">150</span></h2>
+                </div>
+                <div class="cardbtn">
+                    <a>
+                        <button class="btn add-cart">Add to Cart</button>
+                    </a>
+                    <a>
+                        <button class="btn buyNow" onclick="openCart()">Buy Now</button>
+                    </a>
+                </div>
+            </div>
+            <div class="card cartItem">
+                <div class="image">
+                    <img src="../Images/Gallery/biscuits2.jpg" alt="">
+                </div>
+                <div class="heading">
+                    <h2>Biscuits <span><img src="../Icons/rupee.png" alt="" srcset="">150</span></h2>
+                </div>
+                <div class="cardbtn">
+                    <a>
+                        <button class="btn add-cart">Add to Cart</button>
+                    </a>
+                    <a>
+                        <button class="btn buyNow" onclick="openCart()">Buy Now</button>
+                    </a>
+                </div>
+            </div>
+            <div class="card cartItem">
+                <div class="image">
+                    <img src="../Images/Gallery/biscuits2.jpg" alt="">
+                </div>
+                <div class="heading">
+                    <h2>Biscuits <span><img src="../Icons/rupee.png" alt="" srcset="">150</span></h2>
+                </div>
+                <div class="cardbtn">
+                    <a>
+                        <button class="btn add-cart">Add to Cart</button>
+                    </a>
+                    <a>
+                        <button class="btn buyNow" onclick="openCart()">Buy Now</button>
+                    </a>
+                </div>
+            </div>
+            <div class="card cartItem">
+                <div class="image">
+                    <img src="../Images/Gallery/biscuits2.jpg" alt="">
+                </div>
+                <div class="heading">
+                    <h2>Biscuits <span><img src="../Icons/rupee.png" alt="" srcset="">150</span></h2>
+                </div>
+                <div class="cardbtn">
+                    <a>
+                        <button class="btn add-cart">Add to Cart</button>
+                    </a>
+                    <a>
+                        <button class="btn buyNow" onclick="openCart()">Buy Now</button>
+                    </a>
+                </div>
+            </div>
+            <div class="card cartItem">
+                <div class="image">
+                    <img src="../Images/Gallery/biscuits2.jpg" alt="">
+                </div>
+                <div class="heading">
+                    <h2>Biscuits <span><img src="../Icons/rupee.png" alt="" srcset="">150</span></h2>
+                </div>
+                <div class="cardbtn">
+                    <a>
+                        <button class="btn add-cart">Add to Cart</button>
+                    </a>
+                    <a>
+                        <button class="btn buyNow" onclick="openCart()">Buy Now</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--**---------------SECTION 5----------------**-->
+    <!--**----------------------------------------**-->
+    <section id="section5">
+        <img src="../Images/blendmode6.jpg" id="blend6" alt="">
+        <div class="wh">
+            <div class="heading">
+                <h1 class="hoverEffect">
+                    <div class="text">Ice-Creams</div>
+                    <div class="one"></div>
+                    <div class="two"></div>
+                </h1>
+            </div>
+        </div>
+        <div class="pdctContainer container2 ">
+            <div class="card cartItem">
+                <div class="image">
+                    <img src="../Images/home2.jpg" alt="">
+                </div>
+                <div class="heading">
+                    <h2>Ice-cream <span><img src="../Icons/rupee.png" alt="" srcset="">150</span></h2>
+                </div>
+                <div class="cardbtn">
+                    <a>
+                        <button class="btn add-cart">Add to Cart</button>
+                    </a>
+                    <a>
+                        <button class="btn buyNow" onclick="openCart()">Buy Now</button>
+                    </a>
+                </div>
+            </div>
+            <div class="card cartItem">
+                <div class="image">
+                    <img src="../Images/home2.jpg" alt="">
+                </div>
+                <div class="heading">
+                    <h2>Ice-cream <span><img src="../Icons/rupee.png" alt="" srcset="">150</span></h2>
+                </div>
+                <div class="cardbtn">
+                    <a>
+                        <button class="btn add-cart">Add to Cart</button>
+                    </a>
+                    <a>
+                        <button class="btn buyNow" onclick="openCart()">Buy Now</button>
+                    </a>
+                </div>
+            </div>
+            <div class="card cartItem">
+                <div class="image">
+                    <img src="../Images/home2.jpg" alt="">
+                </div>
+                <div class="heading">
+                    <h2>Ice-cream <span><img src="../Icons/rupee.png" alt="" srcset="">150</span></h2>
+                </div>
+                <div class="cardbtn">
+                    <a>
+                        <button class="btn add-cart">Add to Cart</button>
+                    </a>
+                    <a>
+                        <button class="btn buyNow" onclick="openCart()">Buy Now</button>
+                    </a>
+                </div>
+            </div>
+            <div class="card cartItem">
+                <div class="image">
+                    <img src="../Images/home2.jpg" alt="">
+                </div>
+                <div class="heading">
+                    <h2>Ice-cream <span><img src="../Icons/rupee.png" alt="" srcset="">150</span></h2>
+                </div>
+                <div class="cardbtn">
+                    <a>
+                        <button class="btn add-cart">Add to Cart</button>
+                    </a>
+                    <a>
+                        <button class="btn buyNow" onclick="openCart()">Buy Now</button>
+                    </a>
+                </div>
+            </div>
+            <div class="card cartItem">
+                <div class="image">
+                    <img src="../Images/home2.jpg" alt="">
+                </div>
+                <div class="heading">
+                    <h2>Ice-cream <span><img src="../Icons/rupee.png" alt="" srcset="">150</span></h2>
+                </div>
+                <div class="cardbtn">
+                    <a>
+                        <button class="btn add-cart">Add to Cart</button>
+                    </a>
+                    <a>
+                        <button class="btn buyNow" onclick="openCart()">Buy Now</button>
+                    </a>
+                </div>
+            </div>
+            <div class="card cartItem">
+                <div class="image">
+                    <img src="../Images/home2.jpg" alt="">
+                </div>
+                <div class="heading">
+                    <h2>Ice-cream <span><img src="../Icons/rupee.png" alt="" srcset="">150</span></h2>
+                </div>
+                <div class="cardbtn">
+                    <a>
+                        <button class="btn add-cart">Add to Cart</button>
+                    </a>
+                    <a>
+                        <button class="btn buyNow" onclick="openCart()">Buy Now</button>
+                    </a>
+                </div>
+            </div>
+            <div class="card cartItem">
+                <div class="image">
+                    <img src="../Images/home2.jpg" alt="">
+                </div>
+                <div class="heading">
+                    <h2>Ice-cream <span><img src="../Icons/rupee.png" alt="" srcset="">150</span></h2>
+                </div>
+                <div class="cardbtn">
+                    <a>
+                        <button class="btn add-cart">Add to Cart</button>
+                    </a>
+                    <a>
+                        <button class="btn buyNow" onclick="openCart()">Buy Now</button>
+                    </a>
+                </div>
+            </div>
+            <div class="card cartItem">
+                <div class="image">
+                    <img src="../Images/home2.jpg" alt="">
+                </div>
+                <div class="heading">
+                    <h2>Ice-cream <span><img src="../Icons/rupee.png" alt="" srcset="">150</span></h2>
+                </div>
+                <div class="cardbtn">
+                    <a>
+                        <button class="btn add-cart">Add to Cart</button>
+                    </a>
+                    <a>
+                        <button class="btn buyNow" onclick="openCart()">Buy Now</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--***********************************Footer****************************-->
+    <!--************************************************************************-->
+    <footer>
+        <img src="../Images/blendmode2.jpg" alt="">
+        <div class="box">
+            <div id="one">
+                <div class="heading2">
+                    <h2>Company</h2>
+                </div>
+                <div>
+                    <a href="./aboutus.html">
+                        About
+                    </a>
+                </div>
+                <div>
+                    <a href="./contactus.html">
+                        Contact Us
+                    </a>
+                </div>
+                <div>
+                    <a href="./gallery.html">
+                        Gallery
+                    </a>
+                </div>
+            </div>
+            <div id="two">
+                <div class="heading2">
+                    <h2>Support Us</h2>
+                </div>
+                <div><a href="./contactus.html">Join Team</a></div>
+                <div><a href="./aboutus.html">Investors</a></div>
+            </div>
+
+            <div id="three">
+                <div class="heading2">
+                    <h2>Weelky Newsletter</h2>
+                </div>
+                <form action="">
+                    <input type="email" name="Your Email Here">
+                    <input type="submit" value="Subscribe Now" class="btn">
+                </form>
+                <div class="social">
+                    <a href="https:\\www.facebook.com" target="_blank"><img src="../Icons/facebook.png" alt=""></a>
+                    <a href="https:\\www.instagram.com" target="_blank"><img src="../Icons/instagram.png" alt=""></a>
+                    <a href="https:\\www.twitter.com" target="_blank"><img src="../Icons/twitter.png" alt=""></a>
+                    <a href="https:\\www.youtube.com" target="_blank"><img src="../Icons/youtube.png" alt=""></a>
+                </div>
+            </div>
+            <div class="four">
+                <h3>Copyright Protected &copy;
+                    <strong>Bakery Store</strong>
+                </h3>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="../JavaScript/main.js"></script>
+<script>
+    const currenLocation = location.href;
+    const menuItem = document.querySelectorAll('#sec1 ul a');
+    const menuLength = menuItem.length;
+    for (let i = 0; i < menuLength; i++) {
+        if (menuItem[i].href === currenLocation) {
+            menuItem[i].className = "active"
+        }
+    }
+</script>
+
+</html>

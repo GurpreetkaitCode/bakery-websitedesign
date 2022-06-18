@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BakeryStore</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/cart.css">
+</head>
+
+<body>
+    <div id="cartItemBox">
+        <div class="wh">
+            <div class="heading">
+                <h1 class="hoverEffect">
+                    <div class="text">My Cart</div>
+                    <div class="one"></div>
+                    <div class="two"></div>
+                </h1>
+            </div>
+        </div>
+        <div id="icon">
+            <img src="../Icons/closeIcon.png" onclick="openCart()" alt="">
+        </div>
+        <div id="itemBox">
+            <!-- populate with javaScript -->
+        </div>
+        <div id="checkout">
+            <div class="box">
+                <h4>Number of Items</h4>
+                <h4 id="numberOFitems">0</h4>
+            </div>
+            <div class="box">
+                <h4>Sub-Total</h4>
+                <h4 id="subTotal">0</h4>
+            </div>
+            <div class="box">
+                <h4>Delivery Charges</h4>
+                <h4 id="deliveryCharges">0</h4>
+            </div>
+            <div class="box">
+                <h4>Discount</h4>
+                <h4 id="discount">0</h4>
+            </div>
+            <div class="box">
+                <h4>Total</h4>
+                <h4 id="total">0</h4>
+            </div>
+            <div class="box">
+                <div class="BTN">
+                    <a href="#" target="_blank">
+                        <button class="btn" >Order Now</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--*-----------------Section 1---------------------*-->
+    <section id="sec1">
+        <div id="shoppingCart" class="hoverEffect">
+            <div class="text"><img src="../Icons/shoppingcart.png" alt="" onclick="openCart()"><span>0</span></div>
+            <div class="one"></div>
+            <div class="two"></div>
+        </div>
+        <div id="logo">
+            <img src="../Icons/Logo.png" alt="">
+        </div>
+        <nav>
+            <ul>
+                <a href="./index.html">
+                    <li class="hoverEffect">
+                        <div class="text">Home</div>
+                        <div class="one"></div>
+                        <div class="two"></div>
+                    </li>
+                </a>
+                <a href="./aboutus.html">
+                    <li class="hoverEffect">
+                        <div class="text">About us</div>
+                        <div class="one"></div>
+                        <div class="two"></div>
+                    </li>
+                </a>
+                <a href="./contactus.html">
+                    <li class="hoverEffect">
+                        <div class="text">Contact us</div>
+                        <div class="one"></div>
+                        <div class="two"></div>
+                    </li>
+                </a>
+                <a href="./products.html">
+                    <li class="hoverEffect">
+                        <div class="text">Products</div>
+                        <div class="one"></div>
+                        <div class="two"></div>
+                    </li>
+                </a>
+                <a href="./gallery.html">
+                    <li class="hoverEffect">
+                        <div class="text">Gallery</div>
+                        <div class="one"></div>
+                        <div class="two"></div>
+                    </li>
+                </a>
+            </ul>
+        </nav>
+        <div id="grid1">
+            <div>
+                <a href="./login.html"><button class="btn" >Login</button></a>
+            </div>
+            <div>
+                <a href="./login.html"><button class="btn">Sign Up</button></a>
+            </div>
+        </div>
+        <div id="description">
+            <!--inner html is populated with javaScript -->
+        </div>
+
+    </section>
+
+    <!--*----------------------------Section 2------------------------*-->
+    <section id="sec2">
+        <div id="move1">
+            <svg viewBox="0 -38 1440 320">
+                <path fill="rgb(255,255,255)" fill-opacity="1"
+                    d="M0,192L21.8,208C43.6,224,87,256,131,250.7C174.5,245,218,203,262,202.7C305.5,203,349,245,393,256C436.4,267,480,245,524,229.3C567.3,213,611,203,655,213.3C698.2,224,742,256,785,240C829.1,224,873,160,916,149.3C960,139,1004,181,1047,218.7C1090.9,256,1135,288,1178,277.3C1221.8,267,1265,213,1309,208C1352.7,203,1396,245,1418,266.7L1440,288L1440,320L1418.2,320C1396.4,320,1353,320,1309,320C1265.5,320,1222,320,1178,320C1134.5,320,1091,320,1047,320C1003.6,320,960,320,916,320C872.7,320,829,320,785,320C741.8,320,698,320,655,320C610.9,320,567,320,524,320C480,320,436,320,393,320C349.1,320,305,320,262,320C218.2,320,175,320,131,320C87.3,320,44,320,22,320L0,320Z">
+                </path>
+            </svg>
+        </div>
+        <div id="display">
+            <div class="wh">
+                <div class="heading">
+                    <h1 class="hoverEffect">
+                        <div class="text">Gallery</div>
+                        <div class="one"></div>
+                        <div class="two"></div>
+                    </h1>
+                </div>
+            </div>
+            <div id="container">
+                <div class="box">
+                    <div style="--v: 1;">
+                        <img src="../Images/Gallery/biscuits2.jpg" alt="">
+                    </div>
+                    <div style="--v: 2;">
+                        <img src="../Images/Gallery/biscuits2.jpg" alt="">
+                    </div>
+                    <div style="--v: 3;">
+                        <img src="../Images/Gallery/bread1.jpg" alt="">
+                    </div>
+                    <div style="--v: 4;">
+                        <img src="../Images/Gallery/bread2.jpg" alt="">
+                    </div>
+                    <div style="--v: 5;">
+                        <img src="../Images/Gallery/cake1.jpg" alt="">
+                    </div>
+                    <div style="--v: 6;">
+                        <img src="../Images/Gallery/cake2.jpg" alt="">
+                    </div>
+                    <div style="--v: 7;">
+                        <img src="../Images/Gallery/cake3.jpg" alt="">
+                    </div>
+                    <div style="--v: 8;">
+                        <img src="../Images/Gallery/cake4.jpg" alt="">
+                    </div>
+                    <div style="--v: 9;">
+                        <img src="../Images/Gallery/cake5.jpg" alt="">
+                    </div>
+                    <div style="--v: 10;">
+                        <img src="../Images/Gallery/cupcake4.jpg" alt="">
+                    </div>
+                    <div style="--v: 11;">
+                        <img src="../Images/Gallery/cupcake6.jpg" alt="">
+                    </div>
+                    <div style="--v: 12;">
+                        <img src="../Images/Gallery/donut2.jpg" alt="">
+                    </div>
+                    <div style="--v: 13;">
+                        <img src="../Images/Gallery/biscuits1.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="BTN">
+                <a href="./gallery.html" target="_blank">
+                    <button class="btn" >View Gallery</button>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!--*------------SECTION 3------------*-->
+    <section id="sec3">
+        <div id=move2>
+            <svg viewBox="0 -70 1440 320">
+                <path fill="rgba(255,255,255)" fill-opacity="1"
+                    d="M0,128L15,154.7C30,181,60,235,90,234.7C120,235,150,181,180,144C210,107,240,85,270,117.3C300,149,330,235,360,245.3C390,256,420,192,450,181.3C480,171,510,213,540,229.3C570,245,600,235,630,218.7C660,203,690,181,720,160C750,139,780,117,810,122.7C840,128,870,160,900,186.7C930,213,960,235,990,218.7C1020,203,1050,149,1080,160C1110,171,1140,245,1170,229.3C1200,213,1230,107,1260,106.7C1290,107,1320,213,1350,240C1380,267,1410,213,1425,186.7L1440,160L1440,320L1425,320C1410,320,1380,320,1350,320C1320,320,1290,320,1260,320C1230,320,1200,320,1170,320C1140,320,1110,320,1080,320C1050,320,1020,320,990,320C960,320,930,320,900,320C870,320,840,320,810,320C780,320,750,320,720,320C690,320,660,320,630,320C600,320,570,320,540,320C510,320,480,320,450,320C420,320,390,320,360,320C330,320,300,320,270,320C240,320,210,320,180,320C150,320,120,320,90,320C60,320,30,320,15,320L0,320Z">
+                </path>
+            </svg>
+        </div>
+        <div id="content">
+            <div class="wh">
+                <div class="heading">
+                    <h1 class="hoverEffect">
+                        <div class="text">Products</div>
+                        <div class="one"></div>
+                        <div class="two"></div>
+                    </h1>
+                </div>
+            </div>
+            <div class="container2">
+                <div class="card cartItem">
+                    <div class="image">
+                        <img src="../Images/Gallery/biscuits2.jpg" alt="">
+                    </div>
+                    <div class="heading">
+                        <h2>Biscuits <span><img src="../Icons/rupee.png" alt="" srcset="">150</span></h2>
+                    </div>
+                    <div class="cardbtn">
+                        <a>
+                            <button class="btn add-cart">Add to Cart</button>
+                        </a>
+                        <a>
+                            <button class="btn buyNow" onclick="openCart()" >Buy Now</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="card cartItem">
+                    <div class="image">
+                        <img src="../Images/Gallery/bread2.jpg" alt="">
+                    </div>
+                    <div class="heading">
+                        <h2>Bread <span><img src="../Icons/rupee.png" alt="" srcset="">100</span></h2>
+                    </div>
+                    <div class="cardbtn">
+                        <a>
+                            <button class="btn add-cart">Add to Cart</button>
+                        </a>
+                        <a>
+                            <button class="btn buyNow" onclick="openCart()" >Buy Now</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="card cartItem">
+                    <div class="image">
+                        <img src="../Images/Gallery/cake1.jpg" alt="">
+                    </div>
+                    <div class="heading">
+                        <h2>Cakes <span><img src="../Icons/rupee.png" alt="" srcset="">200</span></h2>
+                    </div>
+                    <div class="cardbtn">
+                        <a>
+                            <button class="btn add-cart">Add to Cart</button>
+                        </a>
+                        <a>
+                            <button class="btn buyNow" onclick="openCart()" >Buy Now</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="card cartItem">
+                    <div class="image">
+                        <img src="../Images/Gallery/cupcake6.jpg" alt="">
+                    </div>
+                    <div class="heading">
+                        <h2>Cupcakes <span><img src="../Icons/rupee.png" alt="" srcset="">150</span></h2>
+                    </div>
+                    <div class="cardbtn">
+                        <a>
+                            <button class="btn add-cart">Add to Cart</button>
+                        </a>
+                        <a>
+                            <button class="btn buyNow" onclick="openCart()" >Buy Now</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="card cartItem">
+                    <div class="image">
+                        <img src="../Images/Gallery/donut1.jpg" alt="">
+                    </div>
+                    <div class="heading">
+                        <h2>Donut <span><img src="../Icons/rupee.png" alt="" srcset="">100</span></h2>
+                    </div>
+                    <div class="cardbtn">
+                        <a>
+                            <button class="btn add-cart">Add to Cart</button>
+                        </a>
+                        <a>
+                            <button class="btn buyNow" onclick="openCart()" >Buy Now</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="card cartItem">
+                    <div class="image">
+                        <img src="../Images/home2.jpg" alt="">
+                    </div>
+                    <div class="heading">
+                        <h2>IceCream <span><img src="../Icons/rupee.png" alt="" srcset="">50</span></h2>
+                    </div>
+                    <div class="cardbtn">
+                        <a>
+                            <button class="btn add-cart">Add to Cart</button>
+                        </a>
+                        <a>
+                            <button class="btn buyNow" onclick="openCart()" >Buy Now</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="BTN">
+                <a href="./products.html">
+                    <button class="btn" >All Products</button>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!--*-----------------------------------SECTION 4*------------------------------------->
+    <section id="sec4">
+        <div id="move4">
+            <svg viewBox="0 -90 1440 320">
+                <path fill="white" fill-opacity="1"
+                    d="M0,192L30,202.7C60,213,120,235,180,213.3C240,192,300,128,360,117.3C420,107,480,149,540,176C600,203,660,213,720,186.7C780,160,840,96,900,106.7C960,117,1020,203,1080,202.7C1140,203,1200,117,1260,106.7C1320,96,1380,160,1410,192L1440,224L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z">
+                </path>
+            </svg>
+        </div>
+        <img id="blend" src="../Images/blendmode.jpg" alt="">
+        <div class="grid">
+            <div class="wh">
+                <div class="heading">
+                    <h1 class="hoverEffect">
+                        <div class="text">About us</div>
+                        <div class="one"></div>
+                        <div class="two"></div>
+                    </h1>
+                </div>
+            </div>
+            <div id="gridbox">
+                <div class="container2">
+                    <div class="card card1">
+                        <div class="heading">
+                            <h2>Our Team</h2>
+                        </div>
+                        <!-- <div></div> -->
+                        <div id="second">
+                        </div>
+                        <div class="cardbtn">
+                            <a href="./aboutus.html">
+                                <button class="btn" >Read More</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--***********************************Footer****************************-->
+    <!--************************************************************************-->
+    <footer>
+        <img src="../Images/blendmode2.jpg" alt="">
+        <div class="box">
+            <div id="one">
+                <div class="heading2">
+                    <h2>Company</h2>
+                </div>
+                <div>
+                    <a href="./aboutus.html">
+                        About
+                    </a>
+                </div>
+                <div>
+                    <a href="./contactus.html">
+                        Contact Us
+                    </a>
+                </div>
+                <div>
+                    <a href="./gallery.html">
+                        Gallery
+                    </a>
+                </div>
+            </div>
+            <div id="two">
+                <div class="heading2">
+                    <h2>Support Us</h2>
+                </div>
+                <div><a href="./contactus.html">Join Team</a></div>
+                <div><a href="./aboutus.html">Investors</a></div>
+            </div>
+
+            <div id="three">
+                <div class="heading2">
+                    <h2>Weelky Newsletter</h2>
+                </div>
+                <form action="">
+                    <input type="email" name="Your Email Here">
+                    <input type="submit" value="Subscribe Now" class="btn" >
+                </form>
+                <div class="social">
+                    <a href="https:\\www.facebook.com" target="_blank"><img src="../Icons/facebook.png" alt=""></a>
+                    <a href="https:\\www.instagram.com" target="_blank"><img src="../Icons/instagram.png" alt=""></a>
+                    <a href="https:\\www.twitter.com" target="_blank"><img src="../Icons/twitter.png" alt=""></a>
+                    <a href="https:\\www.youtube.com" target="_blank"><img src="../Icons/youtube.png" alt=""></a>
+                </div>
+            </div>
+            <div class="four">
+                <h3>Copyright Protected &copy;
+                    <strong>Bakery Store</strong>
+                </h3>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="../JavaScript/main.js"></script>
+<script src="../JavaScript/vanilla-tilt.js"></script>
+<script>
+    //Creating Image Slide Show 
+    let images = ["home.jpg", "home1.jpg", "home2.jpg"];
+    let slideIndex = 0;
+    showSlides();
+    function showSlides() {
+        let slides = document.getElementById("sec1");
+        let hometext = document.getElementById("description");
+        let aboutus = document.getElementById("second");
+        if (slideIndex == 3) {
+            slideIndex = 0;
+        }
+        slides.style.background = `url(.././Images/${images[slideIndex]}) no-repeat center center fixed`;
+        slides.style.backgroundSize = "cover"
+        if (slideIndex == 0) {
+            hometext.innerHTML = `
+        <div id="h1">
+            <h1>Happinesss Smelling Bread</h1>
+        </div>
+        <div id="para">
+            <p>It's the Simple Pleasure in Life.....<br>Warm bread for dinner, Slices for breakfast,<br>Thin crisps for snacks</p>
+        </div>
+        <div class="BTN">
+            <a href="./products.html">
+                <button class="btn" >View Products</button>
+            </a>
+        </div>
+        `
+            aboutus.innerHTML = `
+        <div class="flex">
+        <img src="../Images/chef1.jpg" alt="">
+        <p>Aarti Sequeira, One of our senior chef. She is the specialist of cakes as well as All kind of bakery products, she can make.</p>
+    </div>
+        `
+        }
+        else if (slideIndex == 1) {
+            hometext.innerHTML = `
+        <div id="h1">
+            <h1>Cakes For All Occasions</h1>
+        </div>
+        <div id="para">
+            <p>We provides only fresh cakes,<br>Made up of highest qualtiy ingredients.<br>We offer cakes of every flavor.</p>
+        </div>
+        <div class="BTN">
+            <a href="./products.html">
+                <button class="btn" >View Products</button>
+            </a>
+        </div>
+        `
+            aboutus.innerHTML = `
+        <div class="flex">
+        <img src="../Images/chef3.jpg" alt="">
+        <p>Romy Gill is also one of our senior chef. He has specialization in making different kinds of Breads.</p>
+    </div>   
+        `
+        }
+        else if (slideIndex == 2) {
+            hometext.innerHTML = `
+        <div id="h1">
+            <h1>Delicious Ice&#45;Cream</h1>
+        </div>
+        <div id="para">
+            <p>Fresh and Tasty Ice-Cream,<br>Made up of highest qualtiy     ingredients.<br>Flavor of every Ice-Cream is "WOW".</p>
+        </div>
+        <div class="BTN">
+            <a href="./products.html">
+                <button class="btn" >View Products</button>
+            </a>
+        </div>
+        `
+            aboutus.innerHTML = `
+        <div class="flex">
+        <img src="../Images/ChefsTeam.jpg" alt="">
+        <p>These are our juior chefs. They assist the senior chefs.</p>
+    </div>
+        `
+        }
+        // console.log(`url(${images[slideIndex]})`)
+        slideIndex++;//slideIndex = slideIndex + 1
+        setTimeout(showSlides, 3000);
+    }
+
+    VanillaTilt.init(document.querySelectorAll(".card"), {
+        max: 25,
+        speed: 400,
+        glare: true,
+        "max-glare": 0.7,
+    });
+
+    const currenLocation = location.href;
+    const menuItem = document.querySelectorAll('#sec1 ul a');
+    const menuLength = menuItem.length;
+    for (let i = 0; i < menuLength; i++) {
+        if (menuItem[i].href === currenLocation) {
+            menuItem[i].className = "active"
+        }
+    }
+</script>
+
+</html>

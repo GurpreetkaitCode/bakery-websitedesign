@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login or Sign up</title>
+    <link 
+    rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+    crossorigin="anonymous"
+    >
+    <link rel="stylesheet" href="../CSS/login.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="forms-container">
+            <div class="signin-signup">
+                <form action="#" class="sign-in-form">
+                    <h2 class="title">Sign in</h2>
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="Username">
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Password">
+                    </div>
+                    <input type="submit" value="Login" class="button solid">
+                    <p class="social-text">Or Sign in with social platforms</p>
+                    <div class="social-media">
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-google"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </form>
+            </div>
+
+            <div class="signup-signup">
+                <form action="#" class="sign-up-form">
+                    <h2 class="title">Sign up</h2>
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="Username">
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" placeholder="Email">
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Password">
+                    </div>
+                    <input type="submit" value="Sign up" class="button solid">
+                    <p class="social-text">Or Sign up with social platforms</p>
+                    <div class="social-media">
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-google"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="panels-container">
+                <div class="panel left-panel">
+                    <div class="content">
+                        <h3>New Here?</h3>
+                        <p>Create your profile and enjoy the delicious bakery products, get special discounts and many more, Connect with us Now. </p>
+                        <button class="button transparent" id="sign-up-button">Sign up</button>
+                    </div>
+                </div>
+
+                <div class="panel right-panel">
+                    <div class="content">
+                        <h3>One of us</h3>
+                        <p>Already our member then get back to your account for ordering something delicious and get cash back on special offers.</p>
+                        <button class="button transparent" id="sign-in-button">Sign in</button>
+                    </div>
+                </div> 
+        </div>
+    </div>
+</body>
+<script>
+    const sign_in_btn = document.querySelector("#sign-in-button");
+    const sign_up_btn = document.querySelector("#sign-up-button");
+    const container = document.querySelector(".main-container");
+    const signin_signup = document.querySelector(".signin-signup")
+    const sign_up_form = document.querySelector(".sign-up-form")
+    const sign_in_form = document.querySelector(".sign-in-form")
+
+    sign_up_btn.addEventListener('click',()=>
+    {
+        container.classList.add('sign-up-mode');
+        signin_signup.style.zIndex = "5";
+        sign_in_form.style.opacity = "0";
+        setTimeout(function()
+        {
+            sign_up_form.style.opacity = "1";
+        },1000);
+    });
+
+    sign_in_btn.addEventListener('click',()=>
+    {
+        container.classList.remove('sign-up-mode');
+        sign_up_form.style.opacity = "0";
+        setTimeout(function()
+        {
+            signin_signup.style.zIndex = "8";
+            sign_in_form.style.opacity = "1";
+        },1500);
+    });
+</script>
+</html>

@@ -1,0 +1,386 @@
+@media only screen and (max-width:1300px)
+{
+/**--------------Section 1 Setting up the background image---------------------**/
+
+/**---------Section 1 Setting up the Navbar---------**/
+#sec1 nav
+{
+    width:68vw;
+} 
+#sec1 nav>ul>a>li 
+{
+    font-size:1.9vw;
+}
+#sec1 nav>svg
+{
+    top:-34px;
+}
+/**----------------------------Shopping Cart------------------------**/
+#sec1 #shoppingCart
+{
+    padding:2.5vw 3.5vw 1vw 3vw ;
+}
+/*-------------------making buttons setting ------------*/
+
+/*-------------------Using grid method for three button in section 1------------*/
+#sec1 #grid1
+{
+    top:15%;
+}
+/**SECTION 2**/
+/* #sec2
+{
+    height:140vh;
+} */
+#sec2 #heading
+{
+    font-size:4.5vw;
+}
+
+}
+
+
+
+/***********************************************/
+/**1200**/
+@media only screen and (max-width:1200px)
+{
+/**--------------Section 1 Setting up the background image---------------------**/
+
+/**---------Section 1 Setting up the Navbar---------**/
+#sec1 nav
+{
+    width:70vw!important;
+} 
+#sec1 nav>ul>a>li 
+{
+    font-size:1.99vw!important;
+}
+#sec1 nav>ul
+{
+    grid-gap:1.2rem;
+}
+#sec1 nav>svg
+{
+    top:-31px!important;
+}
+/**----------------------------Shopping Cart------------------------**/
+#sec1 #shoppingCart
+{
+    padding:2.5vw 3.5vw 1vw 3vw !important;
+    left:30vw;
+}
+/*-------------------making buttons setting ------------*/
+/**SECTION 2**/
+/* #sec2
+{
+    height:130vh;
+} */
+}
+
+
+
+/***********************************************/
+/**1100**/
+@media only screen and (max-width:1100px)
+{
+/**--------------Section 1 Setting up the background image---------------------**/
+#sec1
+{
+    height:65vw;
+}
+/**---------Section 1 Setting up the Navbar---------**/
+#sec1 nav
+{
+    display:none;
+}
+
+/**----------------------------Shopping Cart------------------------**/
+#sec1 #shoppingCart
+{
+    background: none;
+    left: 20px;
+    top:5px;
+}
+#sec1 #shoppingCart img
+{
+    width:50px;
+}
+#sec1>.hoverEffect .one,#sec1>.hoverEffect .two
+{
+    width:40px;
+    height:2px!important;
+}
+#sec1>.hoverEffect .one
+{
+    left:-10px;
+}
+#sec1>.hoverEffect .two
+{
+    right:-25px;
+    top:-2px;
+}
+/**------------------------LOGO------------------------**/
+#sec1 #logo
+{
+   display: block;
+   left:0;
+   width: 100%;
+   text-align: center;
+}
+#sec1 #logo img
+{
+    max-width:130px;
+}
+/*-----------------Setting up the description on home images-----------------*/
+#sec1 #description h1
+{
+    font-size:7vw;
+}
+#sec1 #description #para
+{
+    font-size:2.8vw;
+    word-spacing:1vw;
+}
+/*-------------------making buttons setting------------*/
+.btn
+{
+    font-size:2vw;
+}
+
+/*-------------------Using grid method for three button in section 1------------*/
+#sec1 #grid1
+{
+    top:2%;
+    right:1rem;
+    z-index:111;
+}
+
+/**SECTION 2**/
+#sec2 #heading
+{
+    font-size:4.5vw;
+    padding-top:2.8rem;
+}
+
+}
+
+
+/***********************************************/
+/**950**/
+@media only screen and (max-width:950px)
+{
+/**--------------Section 1 Setting up the background image---------------------**/
+#sec1
+{
+    height:75vw;
+}
+/*-----------------Setting up the description on home images-----------------*/
+#sec1>#description
+{
+    top:22%;
+}
+#sec1 #description h1
+{
+    font-size:8vw;
+    padding-top:30px;
+}
+#sec1 #description #para
+{
+    font-size:4vw;
+    word-spacing:1.5vw;
+}
+/*-------------------making buttons setting------------*/
+.btn
+{
+    font-size:2.2vw;
+}
+/*----------------------------Section 2--------------------*/
+#sec2 #heading
+{
+    padding-top:2.5rem;
+}
+}
+
+
+/***********************************************/
+/**850**/
+@media only screen and (max-width:850px)
+{
+/**SECTION 2**/
+/* #sec2
+{
+    height:100vh;
+} */
+}
+
+
+
+/***********************************************/
+/**800**/
+@media only screen and (max-width:800px)
+{
+/***SECTION 1*/
+
+/*-------------------making buttons setting------------*/
+.BTN .btn
+{
+    width:30vw;
+}
+/***SECTION 20*/
+#sec2 #heading
+{
+    font-size:4.7vw;
+}
+
+}
+
+
+/***********************************************/
+/**700**/
+@media only screen and (max-width:700px)
+{
+/**--------------Section 1 Setting up the background image---------------------**/
+/* #sec1
+{
+    height: 80vh !important;;
+} */
+/***SECTION 20*/
+#sec2 #heading
+{
+    font-size:4.8vw;
+    padding-top:2rem;
+}
+/* #sec2
+{
+    height:90vh !important;;
+} */
+}
+
+
+
+/***********************************************/
+/**600**/
+@media only screen and (max-width:600px)
+{
+/**--------------Section 1 Setting up the background image---------------------**/
+/* #sec1
+{
+    height:70vh;
+} */
+/*-----------------Setting up the description on home images-----------------*/
+#sec1>#description
+{
+    max-width:100%;
+    top:22%;
+}
+#sec1 #description h1
+{
+    font-size:8vw;
+}
+#sec1 #description #para
+{
+    font-size:4vw;
+    word-spacing:2vw;
+}
+/*-------------------making buttons good looking------------*/
+.btn
+{
+    font-size:3vw;
+    width:20vw;
+}
+.BTN .btn
+{
+    width:35vw;
+}
+/*-------------------Using grid method for three button in section 1------------*/
+#sec1 #grid1
+{
+  display:inline-block;
+}
+/***SECTION 20*/
+#sec2 #heading
+{
+    font-size:4.9vw;
+    padding-top:1rem;
+}
+#sec2
+{
+    height:85vw;
+}
+}
+
+
+/***********************************************/
+/**500**/
+@media only screen and (max-width:500px)
+{
+/**SECTION 1**/
+#sec1
+{
+    height:85vw;
+
+}
+}
+
+
+/***********************************************/
+/**450**/
+@media only screen and (max-width:450px)
+{
+/**--------------Section 1 Setting up the background image---------------------**/
+/* #sec1
+{
+    height:60vh !important;;
+} */
+/*-----------------Setting up the description on home images-----------------*/
+#sec1>#description
+{
+    top:20%;
+}
+#sec1 #description h1
+{
+    font-size:9vw;
+}
+#sec1 #description #para
+{
+    font-size:4.5vw;
+    word-spacing:2vw;
+}
+/*-------------------making buttons good looking------------*/
+
+/***SECTION 20*/
+#sec2 #heading
+{
+    font-size:5.5vw;
+    padding-top:0.8rem;
+}
+/***SECTION 20*/
+#sec2 #heading
+{
+    font-size:4.9vw;
+    padding-top:1rem;
+}
+
+}
+
+/***********************************************/
+/**300px**/
+@media only screen and (max-width:300px)
+{
+/**SECTION 1**/
+#sec1
+{
+    height: 110vw !important;;
+}
+/**------------------------LOGO------------------------**/
+#sec1 #logo img
+{
+    max-width:80px;
+}
+/**SECTION 2**/
+#sec2
+{
+    height: 110vw !important;
+}
+}

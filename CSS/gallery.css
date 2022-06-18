@@ -1,0 +1,83 @@
+#sec1
+{
+    background:url(../Images/home2.jpg)no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#sec1
+{
+    height:20vw;
+}
+.wh
+{
+    position: relative;
+    top:10vw;
+}
+.wh .heading
+{
+    color:#E8C99A;
+}
+#section2
+{
+    position: relative;
+    background:url(../Images/home2.jpg)no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height:50vw;
+}
+#section2::before
+{
+    display: block;
+    position:absolute;
+    content:"";
+    width:100%;
+    height:100%;
+    background:  linear-gradient(rgba(0,0,0,0.49),rgba(0,0,0,0.59));
+}
+.Box
+{
+    display: block;
+    position:absolute;
+    top:9vw;
+    height:32vw;
+    padding:0 10vw;
+    overflow-y: scroll;
+    z-index:11;
+}
+.Box::-webkit-scrollbar
+{
+    display: none;
+}
+#blend4
+{
+    position:relative;
+    width: 100%;
+    height:55vw;
+    mix-blend-mode: screen;
+    top:-2vw;
+    
+}
+.Box .gallery
+{
+    display: block;
+    columns:4;
+    padding:1vw;   
+}
+.gallery .grid-images
+{
+   padding:0.5vw;
+   padding-bottom:0.8vw;
+}
+.gallery .grid-images img
+{
+    width: 100%;
+    border-radius: 1vw;
+}
+.gallery .grid-images img:hover
+{
+    cursor: pointer;
+}

@@ -1,0 +1,272 @@
+#sec1
+{
+    height:20vw;
+}
+.wh
+{
+    width:100%;
+    position: relative;
+    top:10vw;
+}
+.wh .heading
+{
+    color:#E8C99A;
+}
+#section2
+{
+    height:55vw;
+    position: relative;
+    background:url(../Images/home.jpg)no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#section2::before
+{
+    display: block;
+    position:absolute;
+    content:"";
+    width:100%;
+    height:100%;
+    background:  linear-gradient(rgba(0,0,0,0.4),rgba(0, 0, 0, 0.86));
+}
+#blend5
+{
+    height:58vw;
+    width:100%;
+    mix-blend-mode: screen;
+    position:relative;
+    top:-2vw;
+}
+.gridBox
+{
+    display: grid;
+    grid-template-columns:1.5fr 1fr;
+    grid-template-rows:1fr;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height:40vw;
+    position:absolute;
+    top:7vw;
+    box-sizing: border-box;
+    z-index:111;
+    font-family: 'UL';
+}
+.gridBox .first
+{
+    height:100%;
+    width:100%;
+    display:flex;
+}
+.gridBox .first .one,.gridBox .first .two
+{
+    padding:2vw;
+    text-align: center;
+    width: 25vw;
+    height:35vw;
+    margin:2vw;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    border-radius: 15px;
+    background: rgba(255,255,255,0.1);
+    overflow: hidden;
+    border-top: 2px solid rgba(255,255,255,0.6);
+    border-left: 2px solid rgba(255,255,255,0.6);
+    backdrop-filter: blur(6.9px);
+}
+.gridBox .first .one img
+{
+    width: 100%;
+    border-radius:15px;
+    object-fit: cover;
+}
+.gridBox .first .two 
+{
+    color:#E8C99A;
+    font-size:2vw;
+}
+.gridBox .first .two h4
+{
+    color:white;
+    font-size:2vw;
+    text-align: justify;
+}
+.gridBox .first .two h4 span
+{
+    color:#E8C99A;
+    font-weight: bolder;
+}
+.gridBox .second
+{
+    display: grid;
+    grid-template-rows:1fr 1fr 1fr 1fr;
+    width:100%;
+    height:100%;
+    justify-content:center;
+    align-items: center;
+    overflow-y: scroll;
+    text-align: center;
+}
+.gridBox .second:hover,.gridBox .second .card11:hover
+{
+    cursor:pointer;
+    text-align: center;
+}
+.gridBox .second .card11
+{
+    transition:0.5s;
+}
+.gridBox .second .card11:hover
+{
+    transform:scale(1.04,1.04);
+}
+.gridBox .second::-webkit-scrollbar
+{
+    display: none;
+}
+.gridBox .second .card11
+{
+    padding:2vw;
+    text-align: center;
+    width:35vw;
+    height:16vw;
+    margin:2vw;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    border-radius: 15px;
+    background: rgba(255,255,255,0.1);
+    overflow: hidden;
+    border-top: 2px solid rgba(255,255,255,0.6);
+    border-left: 2px solid rgba(255,255,255,0.6);
+    backdrop-filter: blur(6.9px);
+}
+.gridBox .second .card11 .wh
+{
+    width:100%;
+    position: relative;
+    top:-1vw;
+    z-index:112;
+}
+.gridBox .second .card11 .wh .heading
+{
+    color:#E8C99A;
+    font-size:1.7vw;
+}
+.content
+{
+    text-align: justify;
+    font-size:1.4vw;
+    color: white;
+}
+
+#section3
+{
+    height:55vw;
+    position: relative;
+    background:url(../Images/home1.jpg)no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width:100%;
+}
+#section3::before
+{
+    display: block;
+    position:absolute;
+    content:"";
+    width:100%;
+    height:100%;
+    background:  linear-gradient(rgba(0,0,0,0.4),rgba(0, 0, 0, 0.86));
+}
+#blend6
+{
+    height:55vw;
+    width:100%;
+    mix-blend-mode: screen;
+}
+.teamgrid
+{
+    display: grid;
+    grid-template-rows:1fr 1fr 1fr ;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height:35vw;
+    position:absolute;
+    top:13vw;
+    overflow:auto;
+    padding:4vw;
+    row-gap:2vw;
+    scroll-snap-type: both mandatory;
+}
+.teamgrid::-webkit-scrollbar
+{
+    display: none;
+}
+.teamgrid .chefs
+{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    scroll-snap-stop: normal;
+    scroll-snap-align: center;
+}
+.teamgrid .chefs .chefimg
+{
+    padding:2vw;
+    text-align: center;
+    width: 25vw;
+    height:30vw;
+    margin:2vw;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.4);
+    border-radius: 15px;
+    background: rgba(255,255,255,0.1);
+    overflow: hidden;
+    border-top: 2px solid rgba(255,255,255,0.8);
+    border-left: 2px solid rgba(255,255,255,0.8);
+    backdrop-filter: blur(8px);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.teamgrid .chefs .chefimg img
+{
+    width:200%;
+    height:100%;
+    object-fit: cover;
+}
+.teamgrid .chefs .aboutChef
+{
+    padding:2vw;
+    text-align: center;
+    width:60vw;
+    height:30vw;
+    margin:2vw;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.4);
+    border-radius: 15px;
+    background: rgba(255,255,255,0.1);
+    overflow: hidden;
+    border-top: 2px solid rgba(255,255,255,8);
+    border-left: 2px solid rgba(255,255,255,8);
+    backdrop-filter: blur(8px);
+   
+}
+.teamgrid .chefs .aboutChef h4
+{
+text-align: justify;
+font-size:2.5vw;
+color:#E8C99A;
+}
+#section3 .wh
+{
+    width:100%;
+    position:absolute;
+    top:4.5vw;
+}
+#section3 .wh .heading
+{
+    color:#E8C99A;
+}

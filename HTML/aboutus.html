@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BakeryStore</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/aboutus.css">
+    <link rel="stylesheet" href="../CSS/cart.css">
+</head>
+
+<body>
+    <div id="cartItemBox">
+        <div class="wh">
+            <div class="heading">
+                <h1 class="hoverEffect">
+                    <div class="text">My Cart</div>
+                    <div class="one"></div>
+                    <div class="two"></div>
+                </h1>
+            </div>
+        </div>
+        <div id="icon">
+            <img src="../Icons/closeIcon.png" onclick="openCart()" alt="">
+        </div>
+        <div id="itemBox">
+            <!-- populate with javaScript -->
+        </div>
+        <div id="checkout">
+            <div class="box">
+                <h4>Number of Items</h4>
+                <h4 id="numberOFitems">0</h4>
+            </div>
+            <div class="box">
+                <h4>Sub-Total</h4>
+                <h4 id="subTotal">0</h4>
+            </div>
+            <div class="box">
+                <h4>Delivery Charges</h4>
+                <h4 id="deliveryCharges">0</h4>
+            </div>
+            <div class="box">
+                <h4>Discount</h4>
+                <h4 id="discount">0</h4>
+            </div>
+            <div class="box">
+                <h4>Total</h4>
+                <h4 id="total">0</h4>
+            </div>
+            <div class="box">
+                <div class="BTN">
+                    <a href="#" target="_blank">
+                        <button class="btn">Order Now</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--*-----------------Section 1---------------------*-->
+    <section id="sec1">
+        <div id="shoppingCart" class="hoverEffect">
+            <div class="text"><img src="../Icons/shoppingcart.png" onclick="openCart()" alt=""><span>0</span></div>
+            <div class="one"></div>
+            <div class="two"></div>
+        </div>
+        <div id="logo">
+            <img src="../Icons/Logo.png" alt="">
+        </div>
+        <nav>
+            <ul>
+                <a href="./index.html">
+                    <li class="hoverEffect">
+                        <div class="text">Home</div>
+                        <div class="one"></div>
+                        <div class="two"></div>
+                    </li>
+                </a>
+                <a href="./aboutus.html">
+                    <li class="hoverEffect">
+                        <div class="text">About us</div>
+                        <div class="one"></div>
+                        <div class="two"></div>
+                    </li>
+                </a>
+                <a href="./contactus.html">
+                    <li class="hoverEffect">
+                        <div class="text">Contact us</div>
+                        <div class="one"></div>
+                        <div class="two"></div>
+                    </li>
+                </a>
+                <a href="./products.html">
+                    <li class="hoverEffect">
+                        <div class="text">Products</div>
+                        <div class="one"></div>
+                        <div class="two"></div>
+                    </li>
+                </a>
+                <a href="./gallery.html">
+                    <li class="hoverEffect">
+                        <div class="text">Gallery</div>
+                        <div class="one"></div>
+                        <div class="two"></div>
+                    </li>
+                </a>
+            </ul>
+        </nav>
+        <div class="wh">
+            <div class="heading">
+                <h1 class="hoverEffect">
+                    <div class="text">About us</div>
+                    <div class="one"></div>
+                    <div class="two"></div>
+                </h1>
+            </div>
+        </div>
+    </section>
+    <section id="section2">
+        <img src="../Images/blendmode5.jpg" id="blend5" alt="">
+        <div class="gridBox">
+            <div class="first">
+                <div class="one card">
+                    <img src="../Images/owner.jpg" alt="">
+                </div>
+                <div class="two">
+                    <h2>Hi!</h2><br>
+                    <h4>My name is Cristano. I am the <span> owner of Bakery Store and Head chef </span> as well. I
+                        Started this business in 2011 and Now we are expanding business through online. Here, you can
+                        order any kind of bakery product. </h4>
+                </div>
+            </div>
+            <div class="second">
+                <div class="card11">
+                    <div class="wh">
+                        <div class="heading">
+                            <h1 class="hoverEffect">
+                                <div class="text">24/7/365 service</div>
+                                <div class="one"></div>
+                                <div class="two"></div>
+                            </h1>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h4>
+                            We are always there for you: 24 hours a day, 365 days a year, nights, weekends, holidays and
+                            more. Taking orders of customers in any situation. This kind of personal attention says a
+                            lot about our company, builds loyalty and reinforces our brand.
+                        </h4>
+                    </div>
+                </div>
+                <div class="card11">
+                    <div class="wh">
+                        <div class="heading">
+                            <h1 class="hoverEffect">
+                                <div class="text">Organic Bakery Products</div>
+                                <div class="one"></div>
+                                <div class="two"></div>
+                            </h1>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h4>
+                            Organic food is the most nutritious food and should be consumed by everyone. ... Don't wait
+                            for good food, grab some healthy food. Eat healthy!
+                            We don't compromise on the quality of products.
+                        </h4>
+                    </div>
+                </div>
+                <div class="card11">
+                    <div class="wh">
+                        <div class="heading">
+                            <h1 class="hoverEffect">
+                                <div class="text">All Bakery Product</div>
+                                <div class="one"></div>
+                                <div class="two"></div>
+                            </h1>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h4>
+                            If you are a food lover and prefer bakery products, then you have come to the home of good
+                            baking. The sweetest place in town. The taste of old world style baked goods, today! There
+                            are all kind of bakery products.
+                        </h4>
+                    </div>
+                </div>
+                <div class="card11">
+                    <div class="wh">
+                        <div class="heading">
+                            <h1 class="hoverEffect">
+                                <div class="text">Special Offers</div>
+                                <div class="one"></div>
+                                <div class="two"></div>
+                            </h1>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h4>
+                            Send Surprise cakes to any State in India. Treat your Loved Ones with a personalized
+                            Birthday Cake. Delicious Birthday Cakes with Same-day Delivery For any Occasion in UAE.
+                            Order Online!
+                            For Special Occasions discounts are available.
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="section3">
+        <img src="../Images/blendmode6.jpg" id="blend6" alt="">
+        <div class="wh">
+            <div class="heading">
+                <h1 class="hoverEffect">
+                    <div class="text">About Our Team</div>
+                    <div class="one"></div>
+                    <div class="two"></div>
+                </h1>
+            </div>
+        </div>
+        <div class="teamgrid">
+            <div class="chefs">
+                <div class="chefimg card">
+                    <img src="../Images/chef1.jpg" alt="">
+                </div>
+                <div class="aboutChef">
+                    <h4>Aarti Sequeira, One of our senior chef. She is the specialist of cakes as well as All kind of
+                        bakery products, she can make. Moreover, cakes made by her are delicious.</h4>
+                </div>
+            </div>
+            <div class="chefs">
+                <div class="chefimg card">
+                    <img src="../Images/chef3.jpg" alt="">
+                </div>
+                <div class="aboutChef">
+                    <h4>Romy Gill is also one of our senior chef. He has specialization in making different kinds of
+                        Breads. Breads made by him are very delicious.</h4>
+                </div>
+            </div>
+            <div class="chefs">
+                <div class="chefimg card">
+                    <img src="../Images/ChefsTeam.jpg" alt="">
+                </div>
+                <div class="aboutChef">
+                    <h4>These are our juior chefs. They assist the senior chefs by helping them bringing the necessary
+                        items and many more.</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--***********************************Footer****************************-->
+    <!--************************************************************************-->
+    <footer>
+        <img src="../Images/blendmode2.jpg" alt="">
+        <div class="box">
+            <div id="one">
+                <div class="heading2">
+                    <h2>Company</h2>
+                </div>
+                <div>
+                    <a href="./aboutus.html">
+                        About
+                    </a>
+                </div>
+                <div>
+                    <a href="./contactus.html">
+                        Contact Us
+                    </a>
+                </div>
+                <div>
+                    <a href="./gallery.html">
+                        Gallery
+                    </a>
+                </div>
+            </div>
+            <div id="two">
+                <div class="heading2">
+                    <h2>Support Us</h2>
+                </div>
+                <div><a href="./contactus.html">Join Team</a></div>
+                <div><a href="./aboutus.html">Investors</a></div>
+            </div>
+
+            <div id="three">
+                <div class="heading2">
+                    <h2>Weelky Newsletter</h2>
+                </div>
+                <form action="">
+                    <input type="email" name="Your Email Here">
+                    <input type="submit" value="Subscribe Now" class="btn">
+                </form>
+                <div class="social">
+                    <a href="https:\\www.facebook.com" target="_blank"><img src="../Icons/facebook.png" alt=""></a>
+                    <a href="https:\\www.instagram.com" target="_blank"><img src="../Icons/instagram.png" alt=""></a>
+                    <a href="https:\\www.twitter.com" target="_blank"><img src="../Icons/twitter.png" alt=""></a>
+                    <a href="https:\\www.youtube.com" target="_blank"><img src="../Icons/youtube.png" alt=""></a>
+                </div>
+            </div>
+            <div class="four">
+                <h3>Copyright Protected &copy;
+                    <strong>Bakery Store</strong>
+                </h3>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="../JavaScript/vanilla-tilt.js"></script>
+<script src="../JavaScript/main.js"></script>
+<script>
+    const currenLocation = location.href;
+    const menuItem = document.querySelectorAll('#sec1 ul a');
+    const menuLength = menuItem.length;
+    for (let i = 0; i < menuLength; i++) {
+        if (menuItem[i].href === currenLocation) {
+            menuItem[i].className = "active"
+        }
+    }
+
+    VanillaTilt.init(document.querySelectorAll(".card"), {
+        max: 25,
+        speed: 400,
+        glare: true,
+        "max-glare": 0.7,
+    });
+</script>
+
+</html>
